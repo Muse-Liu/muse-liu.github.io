@@ -23,7 +23,7 @@ myImage.onclick = function(){
 let myButton = document.querySelector('button')
 // let myHeading2 = document.querySelector('h1')
 function setUserName (){
-  let myName = prompt('请输入你的名字')
+  // let myName = prompt('请输入你的名字')
   // localStorage.setItem('name',myName)
   // if(!localStorage.getItem('name')){
   //   setUserName()
