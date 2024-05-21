@@ -5,7 +5,7 @@ myHeading.textContent = 'Hello world!';
 
 // 给整个页面添加点击事件
 document.querySelector('html').addEventListener('click',function(){
-    alert('Ouch! Stop poking me!');
+    // alert('Ouch! Stop poking me!');
 })
 
 // 更改图片
@@ -21,7 +21,7 @@ myImage.onclick = function(){
 
 // 切换用户
 let myButton = document.querySelector('button')
-let myHeading2 = document.querySelector('h1')
+// let myHeading2 = document.querySelector('h1')
 function setUserName (){
   let myName = prompt('请输入你的名字')
   // localStorage.setItem('name',myName)
@@ -32,12 +32,13 @@ function setUserName (){
   //   myHeading2.textContent = "Mozilla 酷毙了" + storedName;
   // }
 
-    if (!myName || myName === null) {
-      setUserName();
-    } else {
-      localStorage.setItem("name", myName);
-      myHeading2.textContent = "Mozilla 酷毙了" + myName;
-    }
+    // if (!myName || myName === null) {
+    //   setUserName();
+    // } else {
+    //   localStorage.setItem("name", myName);
+    //   myHeading2.textContent = "Mozilla 酷毙了" + myName;
+    // }
+    window.location.href = "../yanhua.html";
 }
 myButton.onclick = ()=>{
   setUserName();
