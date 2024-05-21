@@ -1,0 +1,51 @@
+<!-- Shift键 + 1键，同时按下，输出 ！ ，快速生成html文件结构 -->
+<!-- !DOCTYPE html 声明文档类型，这个元素用来关联 HTML 编写规范，以供自动查错等功能所用。确保浏览器按照最佳的相关规范进行渲染。而在当今，它作用有限，可以说仅用于保证文档正常读取。 -->
+<!DOCTYPE html>
+<!-- <html> 元素。该元素包含整个页面的所有内容，有时候也称作根元素。里面也包含了 lang 属性，写明了页面的主要语种。 -->
+<html lang="en">
+  <!-- <head> 元素。所有那些你加到页面中，且不向用户展示的页面内容，都以这个元素为容器。其中包含诸如提供给搜索引擎的关键字和页面描述、用于设置页面样式的 CSS、字符集声明等等。 -->
+  <head>
+    <!-- 该元素指明你的文档使用 UTF-8 字符编码，UTF-8 包括世界绝大多数书写语言的字符。它基本上可以处理任何文本内容。以它为编码还可以避免以后出现某些问题，没有理由再选用其他编码。 -->
+    <meta charset="UTF-8" />
+    <!-- 视口元素可以确保页面以视口宽度进行渲染，避免移动端浏览器上因页面过宽导致缩放。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <title> 元素。该元素设置页面的标题，显示在浏览器标签页上，也作为收藏网页的描述文字。 -->
+    <title>Document</title>
+    <!-- 引用字体样式 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Font+Name"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <!-- <body> 元素。该元素包含期望让用户在访问页面时看到的全部内容，包括文本、图像、视频、游戏、可播放的音轨或其他内容。 -->
+  <body>
+    <h1>Mozilla is cool</h1>
+    <img src="images/firefox-icon.webp" width="500px" alt="My test image" />
+    <p>At Mozilla, we're a global community of</p>
+    <ul>
+      <li>technologists</li>
+      <li>thinkers</li>
+      <li>builders</li>
+    </ul>
+    <p>
+      working together to keep the Internet alive and accessible, so people
+      worldwide can be informed contributors and creators of the Web. We believe
+      this act of human collaboration across an open platform is essential to
+      individual growth and our collective future.
+    </p>
+    <p>
+      Read the
+      <a href="https://www.mozilla.org/en-US/about/manifesto/"
+        >Mozilla Manifesto</a
+      >
+      to learn even more about the values and principles that guide the pursuit
+      of our mission.
+    </p>
+    <button>切换用户</button>
+    <!--
+      defer：这是一个属性，其值为defer。它告诉浏览器在页面加载完毕后，延迟执行引入的JavaScript文件，以避免初始化时的性能问题。通常建议在大型文件或需要与其他脚本协同作用的文件上使用defer。
+      注意：这段代码应该放在HTML文件的<head>部分，以便浏览器可以立即执行JavaScript代码。如果<script>标签出现在HTML文档的 body 中，那么它将不会立即执行，直到页面加载完毕。 -->
+    <script src="scripts/index.js" defer></script>
+  </body>
+</html>
